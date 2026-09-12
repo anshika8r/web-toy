@@ -555,3 +555,55 @@ button:hover {
   }
 }
 
+.dark-mode-button {
+  margin-top: 35px;
+  padding: 12px 25px;
+
+  border: 2px solid #c9a3d4;
+  border-radius: 25px;
+
+  background-color: #f3eaf4;
+  color: #765080;
+
+  font-family: 'Fredoka', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.dark-mode-button:hover {
+  transform: scale(1.05);
+}
+
+body.dark-mode {
+  background-color: #17151c;
+  color: #f3eaf4;
+}
+
+body.dark-mode .chaos-page {
+  background-image: none;
+  background-color: #17151c;
+}
+
+body.dark-mode .chaos-page h1 {
+  color: #e6c7ee;
+}
+
+body.dark-mode .chaos-intro {
+  color: #c9a3d4;
+}
+
+body.dark-mode .toy-button {
+  background-color: #2a2430;
+  color: #e6c7ee;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .dark-mode-button {
+  background-color: #2a2430;
+  color: #e6c7ee;
+}
+

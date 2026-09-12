@@ -1,3 +1,5 @@
+
+
 // NO button ko select kar rahe hain
 const noButton = document.querySelector('.no-button');
 
@@ -428,4 +430,50 @@ backVisualButton.addEventListener('click', function () {
   // Chaos page ko wapas show kar do
   chaosPage.style.display = 'block';
 
+});
+
+const darkModeButton = document.querySelector('.dark-mode-button');
+
+darkModeButton.addEventListener('click', function () {
+  document.body.classList.toggle('dark-mode');
+});
+
+const chaosTitle = document.querySelector('.chaos-title');
+
+let secretClicks = 0;
+
+chaosTitle.addEventListener('click', function () {
+  secretClicks++;
+
+  if (secretClicks === 1) {
+    chaosTitle.textContent = 'Why are you clicking me? 👀';
+  }
+
+  else if (secretClicks === 2) {
+    chaosTitle.textContent = 'STOP. 😭';
+  }
+
+  else if (secretClicks === 3) {
+    chaosTitle.textContent = 'Seriously??';
+  }
+
+  else if (secretClicks === 4) {
+    chaosTitle.textContent = 'BRO.';
+  }
+
+  else if (secretClicks === 5) {
+    chaosTitle.textContent = 'ONE MORE AND I SWEAR—';
+  }
+
+  else if (secretClicks === 6) {
+    chaosTitle.textContent = 'YOU WERE WARNED. 😭';
+  }
+
+  else if (secretClicks === 7) {
+    chaosTitle.textContent = '🚨 YOU BROKE THE WEBSITE. 😭';
+
+    setTimeout(function () {
+      chaosTitle.textContent = '...just kidding. 😂';
+    }, 2000);
+  }
 });
