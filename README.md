@@ -5,12 +5,15 @@ A fun interactive web toy built with HTML, CSS, and JavaScript, designed to turn
 ## ✨ Features
 
 - 🎀 Interactive welcome screen with a playful YES/NO interaction
+- 🏃 A mischievous NO button that escapes when you try to hover over it
 - 💀 Weird Button Zone with unexpected button behaviour
 - 😂 Meme Machine with 53 randomly generated local memes
 - 🎲 Chaotic Day Simulator with random outcomes
 - ✨ Visual Experiment with a mouse-reactive magic blob
+- 🌙 Dark Mode with a themed visual transformation
 - 🎵 Interactive sound button
 - 🎬 Smooth page entrance animations
+- 🚨 Hidden Easter egg for curious users
 - 💜 Playful visual design and themed pages
 
 ## 🛠️ Built With
