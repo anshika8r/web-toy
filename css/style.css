@@ -607,3 +607,87 @@ body.dark-mode .dark-mode-button {
   color: #e6c7ee;
 }
 
+
+.easter-egg {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+  z-index: 1000;
+}
+
+.egg {
+  font-size: 100px;
+  animation: eggPop 0.5s ease;
+}
+
+.easter-egg p {
+  margin-top: 10px;
+
+  font-family: 'Fredoka', sans-serif;
+  font-size: 24px;
+  color: #765080;
+}
+
+@keyframes eggPop {
+  0% {
+    transform: scale(0);
+  }
+
+  70% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.egg {
+  position: relative;
+}
+
+.egg::after {
+  content: '';
+  position: absolute;
+
+  width: 55px;
+  height: 4px;
+
+  background-color: #765080;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%) rotate(-15deg);
+
+  opacity: 0;
+
+  animation: eggCrack 3s ease forwards;
+}
+
+@keyframes eggCrack {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(-15deg) scaleX(0);
+  }
+
+  45% {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(-15deg) scaleX(0);
+  }
+
+  55% {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(-15deg) scaleX(1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(-15deg) scaleX(1);
+  }
+}

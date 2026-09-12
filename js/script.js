@@ -439,6 +439,7 @@ darkModeButton.addEventListener('click', function () {
 });
 
 const chaosTitle = document.querySelector('.chaos-title');
+const easterEgg = document.querySelector('.easter-egg');
 
 let secretClicks = 0;
 
@@ -470,10 +471,10 @@ chaosTitle.addEventListener('click', function () {
   }
 
   else if (secretClicks === 7) {
-    chaosTitle.textContent = '🚨 YOU BROKE THE WEBSITE. 😭';
+    easterEgg.style.display = 'block';
 
     setTimeout(function () {
-      chaosTitle.textContent = '...just kidding. 😂';
-    }, 2000);
+      easterEgg.style.display = 'none';
+    }, 3000);
   }
 });
