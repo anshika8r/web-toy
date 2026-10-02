@@ -30,6 +30,10 @@ A fun interactive web toy built with HTML, CSS, and JavaScript, designed to turn
 3. Explore the different mini-toys.
 4. Try the buttons, generate memes, run the simulator, and move your mouse around the visual experiment.
 
+## 🔗 Live Demo
+
+[View Web Toy](https://web-toy.vercel.app/)
+
 ## 📁 Project Structure
 
 ```text
@@ -49,9 +53,6 @@ web-toy/
 │       └── ...
 └── sounds/
     └── FYA.m4a
-
-## 🔗 Link
-web-toy.vercel.app
 
 🚀 Project Goal
 
